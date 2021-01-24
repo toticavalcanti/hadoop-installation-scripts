@@ -1,4 +1,4 @@
-# hadoop installation on ubuntu 20.04.1
+# Java installation on ubuntu 20.04.1
 # Instructions on installing and running different processes related to HDFS on Ubuntu 20.04.1
 
 ## To install and run those resources, follow the instructions for Java

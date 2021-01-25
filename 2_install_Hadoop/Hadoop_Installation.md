@@ -20,7 +20,7 @@
 
 ### download Hadoop (run on terminal)
 > mkdir downloads <br>
-> wget https://archive.apache.org/dist/hadoop/common/hadoop-2.8.5/hadoop-2.8.5.tar.gz <br>
+> wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz <br>
 
 > tar -xzvf hadoop-3.3.0.tar.gz <br>
 > mv hadoop-3.3.0.tar.gz downloads/

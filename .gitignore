@@ -6,14 +6,6 @@ __pycache__/
 # C extensions
 *.so
 
-2_install_Hadoop/
-3_install_sbt/
-4_install_kafka/
-5_install_scala/
-6_install_spark/
-7_install_Flume/
-hbase/
-
 # Distribution / packaging
 .Python
 build/

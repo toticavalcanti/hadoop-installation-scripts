@@ -1,0 +1,12 @@
+
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://localhost:9000</value>
+    </property>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/opt/hadoop/hadoop_tmp</value>
+    </property>
+</configuration>
+

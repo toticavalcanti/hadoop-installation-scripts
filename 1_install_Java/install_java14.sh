@@ -12,13 +12,13 @@ sudo apt install openjdk-14-jdk
 
 # Setting up JAVA_HOME
 echo "# Set up JAVA_HOME
-export JAVA_HOME=$(readlink $(which java) -f | sed "s/\/bin\/java//g")
+export JAVA_HOME=/usr/lib/jvm/java-14-openjdk-amd64
 export PATH=\$PATH:\$JAVA_HOME/bin
 
-" >> ~/.bash_profile
+" >> ~/.profile
 
 # shellcheck disable=SC1090
-source ~/.bash_profile
+source ~/.profile
 
 echo "$JAVA_HOME"
 javac -version

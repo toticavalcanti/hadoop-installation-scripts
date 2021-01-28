@@ -4,10 +4,10 @@
 # See `java14_install.md`
 
 ## Configure password-less SSH
-#sudo apt-get install openssh-server
-#sudo apt-get install openssh-client
+sudo apt-get install openssh-server
+sudo apt-get install openssh-client
 
-#cat /dev/zero | ssh-keygen -q -N ""
+cat /dev/zero | ssh-keygen -q -N ""
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 cd /opt

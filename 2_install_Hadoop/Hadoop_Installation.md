@@ -1,4 +1,4 @@
-### Installing Hadoop/HDFS on Ubuntu 18.04 without `hadoop` user in /opt
+### Installing Hadoop/HDFS on Ubuntu 20.04 without `hadoop` user in /opt
 
 ### setup opt for installations (run on terminal)
 > cd /opt <br>
@@ -176,4 +176,4 @@
 
 
 ### Congratulations, hadoop/HDFS is installed.
-### check hadoop UI at localhost:50070
+### check hadoop UI at localhost:9870

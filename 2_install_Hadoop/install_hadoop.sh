@@ -147,7 +147,7 @@ hdfs namenode -format
 /opt/hadoop-3.3.0/sbin/start-yarn.sh
 
 # Test hadoop / HDFS is working
-hdfs dfs -mkdir /tmp /user /data /hive # hadoop fs is deprecated
+hdfs dfs -mkdir /tmp /user /data /hive
 hdfs dfs -ls /
 
 echo "Congratulations, hadoop/hdfs is installed."

@@ -4,17 +4,17 @@
 # See `java14_install.md`
 
 ## Configure password-less SSH
-#sudo apt-get install openssh-server
-#sudo apt-get install openssh-client
+sudo apt-get install openssh-server
+sudo apt-get install openssh-client
 
-#cat /dev/zero | ssh-keygen -q -N ""
+cat /dev/zero | ssh-keygen -q -N ""
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 sudo chmod -R 777 /opt
 cd /opt
 ## download Hadoop
-#wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz
+wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz
 tar -xzvf hadoop-3.3.0.tar.gz
-#mv hadoop-3.3.0.tar.gz ~/Downloads/
+#rm hadoop-3.3.0.tar.gz
 
 ## Create symbolic link (if you want)
 ln -s hadoop-3.3.0 hadoop

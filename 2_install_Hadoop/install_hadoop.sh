@@ -9,12 +9,12 @@
 
 #cat /dev/zero | ssh-keygen -q -N ""
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-
+sudo chmod -R 777 /opt
 cd /opt
 ## download Hadoop
-wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz
+#wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz
 tar -xzvf hadoop-3.3.0.tar.gz
-mv hadoop-3.3.0.tar.gz ~/Downloads/
+#mv hadoop-3.3.0.tar.gz ~/Downloads/
 
 ## Create symbolic link (if you want)
 ln -s hadoop-3.3.0 hadoop
@@ -142,9 +142,9 @@ hdfs namenode -format
 ## should have `status 0` at the end
 
 # Start HDFS services
-./opt/hadoop-3.3.0/sbin/start-dfs.sh
+/opt/hadoop-3.3.0/sbin/start-dfs.sh
 
-./opt/hadoop-3.3.0/sbin/start-yarn.sh
+/opt/hadoop-3.3.0/sbin/start-yarn.sh
 
 # Test hadoop / HDFS is working
 hdfs dfs -mkdir /tmp /user /data /hive # hadoop fs is deprecated
